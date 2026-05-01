@@ -40,7 +40,7 @@ end Triangle;
 architecture Behavioral of Triangle is
 begin
 
-Wav <= STD_LOGIC_VECTOR(2 * unsigned(Phase(6 downto 0))) when Phase(7) = '0' else
-       STD_LOGIC_VECTOR(2 * ( 127 - unsigned(Phase(6 downto 0))));
+Wav <= std_logic_vector( unsigned(Phase) sll 1 ) when Phase(7) = '0' else
+       std_logic_vector( (to_unsigned(127,7) - unsigned(Phase)) sll 1 );
        
 end Behavioral;

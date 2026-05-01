@@ -39,7 +39,7 @@ end PhaseAccumulator;
 
 architecture Behavioral of PhaseAccumulator is
 signal PhaseAdd: unsigned(3 downto 0);
-signal r_reg, r_next: STD_LOGIC_VECTOR(7 downto 0);
+signal r_reg, r_next: STD_LOGIC_VECTOR(7 downto 0):= (others => '0');
 begin
 process(Clk)
 begin
@@ -48,7 +48,7 @@ if(rising_edge(Clk)) then
 end if;
 end process;
 
-PhaseAdd <= shift_left(1, unsigned(Sel));
+PhaseAdd <= shift_left(to_unsigned(1, PhaseAdd'length), to_integer(unsigned(Freq)));
 r_next <= std_logic_vector(unsigned(r_reg) + PhaseAdd);
 
 Phase <= r_reg;

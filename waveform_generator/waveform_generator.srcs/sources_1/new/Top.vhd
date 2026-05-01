@@ -42,7 +42,7 @@ architecture Behavioral of Top is
 
 component PhaseAccumulator is
     Port ( Clk : in STD_LOGIC;
-           Sel : in STD_LOGIC_VECTOR (1 downto 0);
+           Freq : in STD_LOGIC_VECTOR (1 downto 0);
            Phase : out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
@@ -66,29 +66,35 @@ component Triangle is
            Wav : out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
-signal internal_phase: std_logic_vector (7 downto 0);
-
+signal internal_phase: std_logic_vector (7 downto 0):= "00000000";
+signal rect, saw, sin, tri: std_logic_vector (7 downto 0);
 begin
 my_PhaseAccumulator: PhaseAccumulator port map(
     Clk => clk,
-    Sel => sel,
+    Freq => freq,
     Phase => internal_phase
 );
 my_Rectangle: Rectangle port map(
     Phase => internal_phase,
-    Wav => wav
+    Wav => rect
 );
 my_Sawtooth: Sawtooth port map(
     Phase => internal_phase,
-    Wav => wav
+    Wav => saw
 );
 my_Sine: Sine port map(
     Phase => internal_phase,
-    Wav => wav
+    Wav => sin
 );
 my_Triangle: Triangle port map(
     Phase => internal_phase,
-    Wav => wav
+    Wav => tri
 );
+
+wav <= rect when sel="00" else
+       saw when sel="01" else
+       sin when sel="10" else
+       tri;
+
 
 end Behavioral;
