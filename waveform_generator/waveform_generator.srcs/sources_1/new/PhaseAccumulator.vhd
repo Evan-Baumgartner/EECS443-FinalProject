@@ -33,7 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity PhaseAccumulator is
     Port ( Clk : in STD_LOGIC;
-           Sel : in STD_LOGIC_VECTOR (1 downto 0);
+           Freq : in STD_LOGIC_VECTOR (1 downto 0);
            Phase : out STD_LOGIC_VECTOR (7 downto 0));
 end PhaseAccumulator;
 
