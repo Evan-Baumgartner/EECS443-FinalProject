@@ -39,6 +39,7 @@ end Rectangle;
 architecture Behavioral of Rectangle is
 
 begin
-
+Wav <= "00000000" when Phase(7) = '0' else --make the square wave flip every 128 units of the counter for 50% duty cycle
+       "11111111" when Phase(7) = '1';
 
 end Behavioral;

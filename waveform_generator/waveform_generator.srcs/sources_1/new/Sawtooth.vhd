@@ -39,6 +39,6 @@ end Sawtooth;
 architecture Behavioral of Sawtooth is
 
 begin
-
+Wav <= Phase;
 
 end Behavioral;
