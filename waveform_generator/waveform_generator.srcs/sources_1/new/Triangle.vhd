@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -37,8 +38,9 @@ entity Triangle is
 end Triangle;
 
 architecture Behavioral of Triangle is
-
 begin
 
-
+Wav <= STD_LOGIC_VECTOR(2 * unsigned(Phase(6 downto 0))) when Phase(7) = '0' else
+       STD_LOGIC_VECTOR(2 * ( 127 - unsigned(Phase(6 downto 0))));
+       
 end Behavioral;
