@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../waveform_generator.srcs/sources_1/new/PhaseAccumulator.vhd" \
+"../../../../waveform_generator.srcs/sources_1/new/Rectangle.vhd" \
+"../../../../waveform_generator.srcs/sources_1/new/Sawtooth.vhd" \
+"../../../../waveform_generator.srcs/sources_1/new/Sine.vhd" \
+"../../../../waveform_generator.srcs/sources_1/new/Top.vhd" \
+"../../../../waveform_generator.srcs/sources_1/new/Triangle.vhd" \
+"../../../../waveform_generator.srcs/sim_1/new/Top_tb.vhd" \
+
+# Do not sort compile order
+nosort

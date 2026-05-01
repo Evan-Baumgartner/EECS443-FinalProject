@@ -1,0 +1,280 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri May  1 00:31:32 2026
+# Process ID         : 25860
+# Current directory  : C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.runs/synth_1
+# Command line       : vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file           : C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.runs/synth_1/Top.vds
+# Journal file       : C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.runs/synth_1\vivado.jou
+# Running On         : ENGR-GRY5XP3
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16887 MB
+# Swap memory        : 4711 MB
+# Total Virtual      : 21598 MB
+# Available Virtual  : 2634 MB
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/utils_1/imports/synth_1/Top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/utils_1/imports/synth_1/Top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19284
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1047.789 ; gain = 469.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd:41]
+INFO: [Synth 8-3491] module 'PhaseAccumulator' declared at 'C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/PhaseAccumulator.vhd:34' bound to instance 'my_PhaseAccumulator' of component 'PhaseAccumulator' [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'PhaseAccumulator' [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/PhaseAccumulator.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'PhaseAccumulator' (0#1) [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/PhaseAccumulator.vhd:40]
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Rectangle.vhd:34' bound to instance 'my_Rectangle' of component 'Rectangle' [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'Rectangle' [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Rectangle.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Rectangle' (0#1) [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Rectangle.vhd:39]
+INFO: [Synth 8-3491] module 'Sawtooth' declared at 'C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sawtooth.vhd:34' bound to instance 'my_Sawtooth' of component 'Sawtooth' [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'Sawtooth' [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sawtooth.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Sawtooth' (0#1) [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sawtooth.vhd:39]
+INFO: [Synth 8-3491] module 'Sine' declared at 'C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sine.vhd:33' bound to instance 'my_Sine' of component 'Sine' [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Sine' [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sine.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'Sine' (0#1) [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sine.vhd:38]
+INFO: [Synth 8-3491] module 'Triangle' declared at 'C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Triangle.vhd:35' bound to instance 'my_Triangle' of component 'Triangle' [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'Triangle' [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Triangle.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Triangle' (0#1) [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Triangle.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Top' (0#1) [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd:41]
+WARNING: [Synth 8-7129] Port Phase[6] in module Rectangle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Phase[5] in module Rectangle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Phase[4] in module Rectangle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Phase[3] in module Rectangle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Phase[2] in module Rectangle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Phase[1] in module Rectangle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Phase[0] in module Rectangle is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1153.957 ; gain = 575.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1153.957 ; gain = 575.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1153.957 ; gain = 575.559
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1153.957 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/constrs_1/imports/Nexys4_Board_Material/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/constrs_1/imports/Nexys4_Board_Material/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/constrs_1/imports/Nexys4_Board_Material/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1213.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1213.078 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1213.078 ; gain = 634.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1213.078 ; gain = 634.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1213.078 ; gain = 634.680
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Wav_reg' [C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Rectangle.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1213.078 ; gain = 634.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6040] Register my_PhaseAccumulator/r_reg_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1213.078 ; gain = 634.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-----------------------+---------------+----------------+
+|Module Name | RTL Object            | Depth x Width | Implemented As | 
++------------+-----------------------+---------------+----------------+
+|Sine        | sine_table[0]         | 256x8         | LUT            | 
+|Top         | my_Sine/sine_table[0] | 256x8         | LUT            | 
++------------+-----------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1350.586 ; gain = 772.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1379.930 ; gain = 801.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1379.930 ; gain = 801.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1575.805 ; gain = 997.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1575.805 ; gain = 997.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1575.805 ; gain = 997.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1575.805 ; gain = 997.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1575.805 ; gain = 997.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1575.805 ; gain = 997.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     1|
+|4     |LUT3   |     9|
+|5     |LUT4   |     6|
+|6     |LUT5   |     9|
+|7     |LUT6   |    26|
+|8     |MUXF7  |    11|
+|9     |MUXF8  |     5|
+|10    |FDRE   |    16|
+|11    |LDC    |     1|
+|12    |IBUF   |     5|
+|13    |OBUF   |     8|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1575.805 ; gain = 997.406
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1575.805 ; gain = 938.285
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1575.805 ; gain = 997.406
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1575.805 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1575.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDC => LDCE: 1 instance 
+
+Synth Design complete | Checksum: 383cabba
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1575.805 ; gain = 1201.703
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1575.805 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.runs/synth_1/Top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May  1 00:32:05 2026...
