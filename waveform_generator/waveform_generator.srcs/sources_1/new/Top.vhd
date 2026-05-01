@@ -40,7 +40,55 @@ end Top;
 
 architecture Behavioral of Top is
 
-begin
+component PhaseAccumulator is
+    Port ( Clk : in STD_LOGIC;
+           Sel : in STD_LOGIC_VECTOR (1 downto 0);
+           Phase : out STD_LOGIC_VECTOR (7 downto 0));
+end component;
 
+component Rectangle is
+    Port ( Phase : in STD_LOGIC_VECTOR (7 downto 0);
+           Wav : out STD_LOGIC_VECTOR (7 downto 0));
+end component;
+
+component Sawtooth is
+    Port ( Phase : in STD_LOGIC_VECTOR (7 downto 0);
+           Wav : out STD_LOGIC_VECTOR (7 downto 0));
+end component;
+
+component Sine is
+    Port ( Phase : in STD_LOGIC_VECTOR (7 downto 0);
+           Wav : out STD_LOGIC_VECTOR (7 downto 0));
+end component;
+
+component Triangle is
+    Port ( Phase : in STD_LOGIC_VECTOR (7 downto 0);
+           Wav : out STD_LOGIC_VECTOR (7 downto 0));
+end component;
+
+signal internal_phase: std_logic_vector (7 downto 0);
+
+begin
+my_PhaseAccumulator: PhaseAccumulator port map(
+    Clk => clk,
+    Sel => sel,
+    Phase => internal_phase
+);
+my_Rectangle: Rectangle port map(
+    Phase => internal_phase,
+    Wav => wav
+);
+my_Sawtooth: Sawtooth port map(
+    Phase => internal_phase,
+    Wav => wav
+);
+my_Sine: Sine port map(
+    Phase => internal_phase,
+    Wav => wav
+);
+my_Triangle: Triangle port map(
+    Phase => internal_phase,
+    Wav => wav
+);
 
 end Behavioral;
