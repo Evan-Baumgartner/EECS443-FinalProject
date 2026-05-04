@@ -2,10 +2,11 @@
 2020.2
 Nov  8 2024
 22:36:57
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sim_1/new/Top_tb.vhd,1777609003,vhdl,,,,top_tb,,,,,,,,
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/PhaseAccumulator.vhd,1777608833,vhdl,,,,phaseaccumulator,,,,,,,,
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Rectangle.vhd,1777602953,vhdl,,,,rectangle,,,,,,,,
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sawtooth.vhd,1777602953,vhdl,,,,sawtooth,,,,,,,,
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sine.vhd,1777610374,vhdl,,,,sine,,,,,,,,
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd,1777610266,vhdl,,,,top,,,,,,,,
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Triangle.vhd,1777607061,vhdl,,,,triangle,,,,,,,,
+C:/Users/v731v861.HOME/Documents/GitHub/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sim_1/new/Top_tb.vhd,1777905318,vhdl,,,,top_tb,,,,,,,,
+C:/Users/v731v861.HOME/Documents/GitHub/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/PhaseAccumulator.vhd,1777903317,vhdl,,,,phaseaccumulator,,,,,,,,
+C:/Users/v731v861.HOME/Documents/GitHub/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Rectangle.vhd,1777597746,vhdl,,,,rectangle,,,,,,,,
+C:/Users/v731v861.HOME/Documents/GitHub/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sawtooth.vhd,1777598429,vhdl,,,,sawtooth,,,,,,,,
+C:/Users/v731v861.HOME/Documents/GitHub/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sine.vhd,1777903317,vhdl,,,,sine,,,,,,,,
+C:/Users/v731v861.HOME/Documents/GitHub/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd,1777906092,vhdl,,,,top,,,,,,,,
+C:/Users/v731v861.HOME/Documents/GitHub/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Triangle.vhd,1777903317,vhdl,,,,triangle,,,,,,,,
+C:/Users/v731v861.HOME/Documents/GitHub/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/clock_divider.vhd,1777906412,vhdl,,,,clock_divider,,,,,,,,

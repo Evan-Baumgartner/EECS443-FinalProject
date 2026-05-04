@@ -43,7 +43,7 @@ component Top is
            clk : in STD_LOGIC);
 end component;
 
-signal freq, sel: std_logic_vector(1 downto 0):= "00";
+signal freq, sel: std_logic_vector(1 downto 0):= "10";
 signal wav: std_logic_vector(7 downto 0);
 signal clk: std_logic:= '0';
 
@@ -57,7 +57,7 @@ process
 	begin
 		
 		wait for 10 ns;
-		for i in 0 to 2000 loop
+		for i in 0 to 200000000 loop
             clk <= '1';
             wait for 10 ns;
             clk <= '0';
