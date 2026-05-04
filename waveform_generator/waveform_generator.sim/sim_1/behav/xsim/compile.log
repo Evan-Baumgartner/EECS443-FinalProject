@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sine.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Sine'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Top'
