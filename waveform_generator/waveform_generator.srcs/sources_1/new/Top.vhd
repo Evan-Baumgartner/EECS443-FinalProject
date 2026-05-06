@@ -66,11 +66,21 @@ component Triangle is
            Wav : out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
+component clock_divider is
+    port(
+        clk: in std_logic;
+        f_o: out std_logic
+    );
+end component;
+
 signal internal_phase: std_logic_vector (7 downto 0):= "00000000";
 signal rect, saw, sin, tri: std_logic_vector (7 downto 0);
+signal divided_clk: std_logic;
+
+
 begin
 my_PhaseAccumulator: PhaseAccumulator port map(
-    Clk => clk,
+    Clk => divided_clk,
     Freq => freq,
     Phase => internal_phase
 );
@@ -90,11 +100,17 @@ my_Triangle: Triangle port map(
     Phase => internal_phase,
     Wav => tri
 );
+my_clock_divider: clock_divider port map(
+    clk => clk,
+    f_o => divided_clk
+);
 
 wav <= rect when sel="00" else
        saw when sel="01" else
        sin when sel="10" else
        tri;
+       
+
 
 
 end Behavioral;
