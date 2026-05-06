@@ -77,7 +77,6 @@ signal internal_phase: std_logic_vector (7 downto 0):= "00000000";
 signal rect, saw, sin, tri: std_logic_vector (7 downto 0);
 signal divided_clk: std_logic;
 
-
 begin
 my_PhaseAccumulator: PhaseAccumulator port map(
     Clk => divided_clk,
@@ -109,8 +108,6 @@ wav <= rect when sel="00" else
        saw when sel="01" else
        sin when sel="10" else
        tri;
-       
-
 
 
 end Behavioral;

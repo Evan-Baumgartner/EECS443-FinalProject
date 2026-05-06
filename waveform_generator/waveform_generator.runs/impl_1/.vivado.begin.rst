@@ -1,20 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="t397j696" Host="ENGR-GRY5XP3" Pid="25056" HostCore="16" HostMemory="016887386112">
+    <Process Command="vivado.bat" Owner="night" Host="AGEOFMACHINE" Pid="40500" HostCore="16" HostMemory="033408622592">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="t397j696" Host="ENGR-GRY5XP3" Pid="19500" HostCore="16" HostMemory="016887386112">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="t397j696" Host="ENGR-GRY5XP3" Pid="15768" HostCore="16" HostMemory="016887386112">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="t397j696" Host="ENGR-GRY5XP3" Pid="4344" HostCore="16" HostMemory="016887386112">
+    <Process Command="vivado.bat" Owner="night" Host="AGEOFMACHINE" Pid="39644" HostCore="16" HostMemory="033408622592">
     </Process>
 </ProcessHandle>

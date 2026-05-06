@@ -2,10 +2,11 @@
 2020.2
 Nov  8 2024
 22:36:57
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sim_1/new/Top_tb.vhd,1777905900,vhdl,,,,top_tb,,,,,,,,
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/PhaseAccumulator.vhd,1777608833,vhdl,,,,phaseaccumulator,,,,,,,,
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Rectangle.vhd,1777602953,vhdl,,,,rectangle,,,,,,,,
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sawtooth.vhd,1777602953,vhdl,,,,sawtooth,,,,,,,,
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sine.vhd,1777610374,vhdl,,,,sine,,,,,,,,
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd,1777610470,vhdl,,,,top,,,,,,,,
-C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Triangle.vhd,1777607061,vhdl,,,,triangle,,,,,,,,
+C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sim_1/new/Top_tb.vhd,1778032915,vhdl,,,,top_tb,,,,,,,,
+C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/PhaseAccumulator.vhd,1778030041,vhdl,,,,phaseaccumulator,,,,,,,,
+C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Rectangle.vhd,1778026029,vhdl,,,,rectangle,,,,,,,,
+C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sawtooth.vhd,1778026029,vhdl,,,,sawtooth,,,,,,,,
+C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sine.vhd,1778026029,vhdl,,,,sine,,,,,,,,
+C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd,1778032141,vhdl,,,,top,,,,,,,,
+C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Triangle.vhd,1778026029,vhdl,,,,triangle,,,,,,,,
+C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/clock_divider.vhd,1778032126,vhdl,,,,clock_divider,,,,,,,,

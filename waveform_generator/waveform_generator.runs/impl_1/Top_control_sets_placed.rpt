@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Fri May  1 00:32:36 2026
-| Host         : ENGR-GRY5XP3 running 64-bit major release  (build 9200)
+| Date         : Tue May  5 20:50:04 2026
+| Host         : AgeOfMachine running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
 | Device       : xc7a100t
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     2 |
-|    Minimum number of control sets                        |     2 |
+| Total control sets                                       |     3 |
+|    Minimum number of control sets                        |     3 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |     7 |
+| Unused register locations in slices containing registers |    11 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,7 +39,7 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     2 |
+| Total control sets |     3 |
 | >= 0 to < 4        |     1 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     0 |
@@ -47,7 +47,7 @@ Table of Contents
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     1 |
+| >= 16              |     2 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -60,7 +60,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              16 |            5 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               1 |            1 |
+| No           | Yes                   | No                     |             501 |          135 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -70,11 +70,12 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------+---------------+------------------------------------+------------------+----------------+--------------+
-|        Clock Signal        | Enable Signal |          Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------------------+---------------+------------------------------------+------------------+----------------+--------------+
-|  my_PhaseAccumulator/O2[0] |               | my_PhaseAccumulator/r_reg_reg[7]_0 |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG             |               |                                    |                5 |             16 |         3.20 |
-+----------------------------+---------------+------------------------------------+------------------+----------------+--------------+
++---------------------------+---------------+------------------------------------+------------------+----------------+--------------+
+|        Clock Signal       | Enable Signal |          Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------+---------------+------------------------------------+------------------+----------------+--------------+
+|  my_PhaseAccumulator/Q[0] |               | my_PhaseAccumulator/r_reg_reg[7]_0 |                1 |              1 |         1.00 |
+|  my_clock_divider/O[0]    |               |                                    |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG            |               | my_clock_divider/clear             |              134 |            500 |         3.73 |
++---------------------------+---------------+------------------------------------+------------------+----------------+--------------+
 
 

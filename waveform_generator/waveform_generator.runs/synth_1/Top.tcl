@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.runs/synth_1/Top.tcl"
+  variable script "C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.runs/synth_1/Top.tcl"
   variable category "vivado_synth"
 }
 
@@ -57,29 +57,28 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.cache/wt [current_project]
-set_property parent.project_path C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.cache/wt [current_project]
+set_property parent.project_path C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.cache/ip [current_project]
+set_property ip_output_repo c:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/PhaseAccumulator.vhd
-  C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Rectangle.vhd
-  C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sawtooth.vhd
-  C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sine.vhd
-  C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Triangle.vhd
-  C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd
+  C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/PhaseAccumulator.vhd
+  C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Rectangle.vhd
+  C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sawtooth.vhd
+  C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Sine.vhd
+  C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Triangle.vhd
+  C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/clock_divider.vhd
+  C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/sources_1/new/Top.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -90,12 +89,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/constrs_1/imports/Nexys4_Board_Material/Nexys4DDR_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/constrs_1/imports/Nexys4_Board_Material/Nexys4DDR_Master.xdc]
+read_xdc C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/constrs_1/imports/Nexys4_Board_Material/Nexys4DDR_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/constrs_1/imports/Nexys4_Board_Material/Nexys4DDR_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/utils_1/imports/synth_1/Top.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.srcs/utils_1/imports/synth_1/Top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

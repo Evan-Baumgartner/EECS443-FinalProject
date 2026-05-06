@@ -6,6 +6,7 @@ vhdl xil_defaultlib  \
 "../../../../waveform_generator.srcs/sources_1/new/Sine.vhd" \
 "../../../../waveform_generator.srcs/sources_1/new/Top.vhd" \
 "../../../../waveform_generator.srcs/sources_1/new/Triangle.vhd" \
+"../../../../waveform_generator.srcs/sources_1/new/clock_divider.vhd" \
 "../../../../waveform_generator.srcs/sim_1/new/Top_tb.vhd" \
 
 # Do not sort compile order

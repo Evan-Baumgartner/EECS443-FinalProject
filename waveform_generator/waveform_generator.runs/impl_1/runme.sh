@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/t397j696/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.runs/impl_1'
+HD_PWD='C:/Users/night/Desktop/EECS443-FinalProject/waveform_generator/waveform_generator.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -67,7 +67,7 @@ process
 	
 	   for i in 0 to 3 loop
             wait for 10 ns;
-            for j in 0 to 500 loop
+            for j in 0 to 500000 loop
                 clk <= '1';
                 wait for 10 ns;
                 clk <= '0';
