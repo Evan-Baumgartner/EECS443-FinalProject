@@ -69,9 +69,9 @@ process
             wait for 10 ns;
             for j in 0 to 500000 loop
                 clk <= '1';
-                wait for 10 ns;
+                wait for 5 ns;
                 clk <= '0';
-                wait for 10 ns;
+                wait for 5 ns;
             end loop;
             freq <= std_logic_vector(unsigned(freq) + 1);
 	   end loop;
