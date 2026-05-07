@@ -62,8 +62,8 @@ UUT4: Top
 port map (clk => clk, freq => freq, wav => wav4, sel => "11");
 
 process
-    variable k : integer := 0;
 	begin
+	freq <= "00";
 	
 	   for i in 0 to 3 loop
             wait for 10 ns;
@@ -75,7 +75,7 @@ process
             end loop;
             freq <= std_logic_vector(unsigned(freq) + 1);
 	   end loop;
-	
+	   wait;
 	end process;
 
 end Behavioral;
